@@ -29,3 +29,26 @@
     background-size: 100% 100%;
   }
 }
+
+#gradient-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  --gradient-color-1: #6ee7b7;
+  --gradient-color-2: #93c5fd;
+  --gradient-color-3: #818cf8;
+  --gradient-color-4: #4852b3;
+
+  z-index: 0;
+
+  mask-image: -webkit-gradient(
+    linear,
+    right top,
+    right bottom,
+    color-stop(0, rgba(0, 0, 0, 1)),
+    color-stop(0.35, rgba(0, 0, 0, 1)),
+    color-stop(0.85, rgba(0, 0, 0, 0)),
+    color-stop(1, rgba(0, 0, 0, 0))
+  );
+}

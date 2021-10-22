@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import LandingPage from '../components/LandingPage'
 import NavBar from '../components/NavBar'
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -10,6 +12,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <NavBar/>
+      <LandingPage/>
     </>
   )
 }

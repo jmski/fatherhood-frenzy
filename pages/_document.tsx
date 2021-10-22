@@ -1,3 +1,4 @@
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
@@ -24,7 +25,7 @@ class MyDocument extends Document {
             crossOrigin=""
           />
         </Head>
-        <body className=" bg-gray-500 overflow-x-hidden">
+        <body className=" bg-gray-800 overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
