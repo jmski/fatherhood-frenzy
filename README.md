@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## TODO List
 
-## Getting Started
+1. Create user profile
+2. Create a library of mini games.
+3. Track gold and exp points earned from each game into a user profile.
+4. Store user profile, gold, exp points into a database.
 
-First, run the development server:
+## About the Game
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Fatherhood Frenzy is a game of life simulator with a series of mini games.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The player creates a profile and chooses between 3 "dad" types.
+Each dad type has a special bonus feature and handicap
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The player's ability to earn gold and exp also depends on their environment.
+In the beginning, this environment is selected at random.
+There will be options to change the environment once certain achievements have been unlocked.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The player starts with 1 child. The player can have a maximum of 12 children.
+For each child, the player will gain a score multiplier by 1 during score calculation.
+For each child, the Expense multiplier will increase by 1.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Each child is permanent. The expense multiplier will can be reduced if the child is successful.
 
-## Learn More
+The goal is to unlock the retirement achievement with the highest score possible.
+The score is based on levels, children, gold and exp points.
 
-To learn more about Next.js, take a look at the following resources:
+Lose conditions:
+Negative gold balance threshold
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Mini Games
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Each game gives a set number of gold and exp points.
 
-## Deploy on Vercel
+1. Typing
+2. Math
+3. Accuracy
+4. Reaction
+5. Matching
+6. Idle Clicker
+7. Auto Battler
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Gold can be used to purchase power ups and upgrade your child.
+Exp points is used to level up.
+Upon leveling up, the player gains (3 x num of children) skill points to distribute to your child(ren).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Game Steps
+
+Generate profile
+Environment
+
+## Create User Profile
+
+1. ask for name
+2. personality quiz
+3. special features
+4. ideal spouse personality
+5. skill tree
+
+## Appearance / Customization
+
+1. ethnicity
+2. face
+3. build
+
+## Generate Environmental Factors
+
+1. income
+2. family
+3. generational wealth
+4. career path
+5. region
+
+## Goals
+
+1. determine personal goals
+2. determine parental goals
+
+## Results
+
+1. is he/ she
