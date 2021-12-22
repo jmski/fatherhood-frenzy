@@ -79,3 +79,33 @@ Environment
 ## Results
 
 1. is he/ she
+
+
+## reaction game
+
+pregame state
+showdown screen
+gunshot screen
+result screen
+gold / exp screen
+
+
+## Typing racing game
+
+
+pregame state = initialstate
+
+playerposition
+0 to 100
+sentence complete for every + 7 progress
+player string
+initial sentence 
+array of sentences (10)
+check by character
+
+
+countdown screen
+race screen
+result screen
+gold /exp screen
+
