@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Button } from "../components/ui/Button";
 import PlayerProfile from "../components/game/PlayerProfile";
 import Summary from "../components/game/Summary";
+import Race from "../components/race-typing/Race";
 
 const Game = () => {
   enum STAGE {
     PlayerProfile,
+    Race,
     Summary,
   }
 
@@ -28,6 +30,8 @@ const Game = () => {
   const getComponent = (stage: STAGE) => {
     if (stage == STAGE.PlayerProfile) {
       return <PlayerProfile />;
+    } else if (stage == STAGE.Race) {
+      return <Race />;
     } else if (stage == STAGE.Summary) {
       return <Summary />;
     }
