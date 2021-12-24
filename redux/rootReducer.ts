@@ -1,5 +1,7 @@
 import { combineReducers, Reducer } from "@reduxjs/toolkit";
 import { playerProfileSlice, PlayerProfileState } from "./playerProfileSlice";
+import { raceTypeSlice, RaceTypeState } from "./RaceTypeSlice";
+
 type State = {
   playerProfile: PlayerProfileState;
   raceType: RaceTypeState;
