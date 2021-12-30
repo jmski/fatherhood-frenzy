@@ -1,8 +1,10 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     fontFamily: {
       sans: ["Lexend", ...defaultTheme.fontFamily.sans],
@@ -18,5 +20,5 @@ module.exports = {
   options: {
     fontFace: true,
   },
-  plugins: [],
+  plugins: [require("tailwindcss"), require("precss"), require("autoprefixer")],
 };

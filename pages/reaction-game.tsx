@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../components/ui/Button";
-import PlayerProfile from "../components/game/PlayerProfile";
-import Summary from "../components/game/Summary";
 import Showdown from "../components/reaction-game/Showdown";
 import GunShot from "../components/reaction-game/GunShot";
 import PreGame from "../components/reaction-game/PreGame";
