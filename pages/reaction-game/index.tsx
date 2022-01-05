@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "../components/ui/Button";
-import Showdown from "../components/reaction-game/Showdown";
-import GunShot from "../components/reaction-game/GunShot";
-import PreGame from "../components/reaction-game/PreGame";
-import GameOver from "../components/reaction-game/GameOver";
+import { Button } from "../../components/ui/Button";
+import Showdown from "../../components/reaction-game/Showdown";
+import GunShot from "../../components/reaction-game/GunShot";
+import PreGame from "../../components/reaction-game/PreGame";
+import GameOver from "../../components/reaction-game/GameOver";
 
 const Game = () => {
   enum STAGE {

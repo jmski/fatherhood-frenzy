@@ -1,10 +1,10 @@
 import { Component } from "react";
 
-import { words } from "../helpers/words.json";
-import Result from "../components/typing-game/Result";
-import Test from "../components/typing-game/Test";
-import Header from "../components/typing-game/Header";
-import Footer from "../components/typing-game/Footer";
+import { words } from "../../helpers/words.json";
+import Result from "../../components/typing-game/Result";
+import Test from "../../components/typing-game/Test";
+import Header from "../../components/typing-game/Header";
+import Footer from "../../components/typing-game/Footer";
 
 interface State {
   currWord: string;
