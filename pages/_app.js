@@ -1,13 +1,12 @@
 import React from "react";
-import { Provider as ReduxProvider } from "react-redux";
-import store from "../redux/store";
+import Layout from "../components/Layout";
 import "../styles/index.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ReduxProvider store={store}>
+    <Layout>
       <Component {...pageProps} />
-    </ReduxProvider>
+    </Layout>
   );
 }
 

@@ -2,10 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx}", "./components/**/*.{js,ts,jsx}"],
   theme: {
     screens: {
       mobile: "330px",
@@ -30,12 +27,6 @@ module.exports = {
         "span-1-7": "1 / 7",
         "span-1-8": "1 / 8",
         "span-1-9": "1 / 9",
-
-        "span-2-5": "2 / 5",
-        "span-2-6": "2 / 6",
-        "span-2-7": "2 / 7",
-        "span-2-8": "2 / 8",
-        "span-2-9": "2 / 9",
       },
       grayscale: {
         50: "50%",
