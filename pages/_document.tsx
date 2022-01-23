@@ -15,20 +15,8 @@ class MyDocument extends Document {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <link
-            rel="preload"
-            href="/fonts/Lexend/Lexend-Bold.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="/fonts/Lexend/Lexend-Regular.ttf"
-            as="font"
-            crossOrigin=""
-          />
         </Head>
-        <body className=" bg-gray-800 overflow-x-hidden">
+        <body className="bg-stone-800 overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
