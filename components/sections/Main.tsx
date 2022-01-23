@@ -2,9 +2,10 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="px-4 mobile:px-12 mt-20 sm:px-20 sm:mt-32 md:px-28 lg:px-40">
-      <div className="grid grid-cols-12 text-white">
-        <div className="col-span-1-8">
+    <div className="px-12 py-8">
+      <div className="grid grid-cols-12">
+        <div className="col-span-1-9">
+          <h2 className="text-3xl">Latest Video</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
           neque, iste, dolor dolores laboriosam mollitia blanditiis perspiciatis
           consequuntur excepturi architecto beatae culpa autem officia sapiente,
@@ -29,7 +30,8 @@ const Main = () => {
           saepe omnis voluptatibus atque ab. Ad odit doloremque eaque assumenda
           optio vitae eligendi repudiandae fuga vero nulla, voluptates nihil!
         </div>
-        <div className="col-start-9 col-end-12">
+        <div className="col-start-10 col-end-13">
+          <h2 className="text-3xl">Article Gallery</h2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
           minus voluptates expedita adipisci quasi eius fugit culpa? Possimus
           nihil optio omnis eligendi cupiditate quod alias rem voluptates, error

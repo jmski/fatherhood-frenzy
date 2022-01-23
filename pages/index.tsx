@@ -4,7 +4,7 @@ import Header from "../components/sections/Header";
 import Main from "../components/sections/Main";
 import NavBar from "../components/sections/Nav";
 import Social from "../components/sections/Social";
-import Subscribe from "../components/sections/Subscribe";
+import Search from "../components/sections/Search";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <Social />
       {/* <Preview /> */}
       <Main />
-      <Subscribe />
+      <Search />
       <Footer />
     </>
   );

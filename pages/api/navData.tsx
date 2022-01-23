@@ -1,4 +1,3 @@
-import React from "react";
 import { IoPersonSharp, IoSearch } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import {
@@ -8,7 +7,7 @@ import {
   FaShoppingCart,
 } from "react-icons/fa";
 
-export const navLinks = [
+export const navData = [
   {
     title: "games",
     href: "/games",
