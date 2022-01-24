@@ -13,7 +13,8 @@ export { default as Loader } from "./Loader";
 export { default as Layout } from "./Layout";
 
 export { default as NavBar } from "./Nav";
+export { default as AdjacentPosts } from "./AdjacentPosts";
+export { default as FeaturedPosts } from "./FeaturedPosts";
 export { default as Social } from "./Social";
-export { default as Search } from "./Search";
 export { default as Footer } from "./Footer";
 export { default as Header } from "./Header";
