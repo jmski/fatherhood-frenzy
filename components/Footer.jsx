@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="bg-stone-800 py-12">
       <div className="flex flex-col justify-center items-center gap-8">
         <div className="flex justify-center">
-          <img src={"/images/ff-banner-white-small.png"} />
+          <img src={"/images/ff-banner-white-small.png"} alt={"logo"} />
         </div>
         <div className="flex justify-center gap-8">
           {socialData.map((element, index) => (
