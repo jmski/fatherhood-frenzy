@@ -4,12 +4,12 @@ import { MdEmail } from "react-icons/md";
 export const socialData = [
   {
     title: "youtube",
-    href: "https://youtube.com/fatherhoodfrenzy",
+    href: "https://www.youtube.com/channel/UCIL_Pi0vFkwUeF70sSG1gcA",
     icon: <FaYoutube size={40} />,
   },
   {
     title: "instagram",
-    href: "https://instagram.com/fatherhoodfrenzy",
+    href: "https://www.instagram.com/fatherhood.frenzy/",
     icon: <FaInstagram size={40} />,
   },
   {

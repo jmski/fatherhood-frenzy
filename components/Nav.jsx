@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { navData } from "../../pages/api/navData";
+import { navData } from "../pages/api/navData";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

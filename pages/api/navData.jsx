@@ -9,16 +9,10 @@ import {
 
 export const navData = [
   {
-    title: "games",
-    href: "/games",
-    src: <FaGamepad />,
-    color: "violet",
-  },
-  {
-    title: "teach",
-    href: "/learning",
+    title: "blog",
+    href: "/blog",
     src: <FaBookReader />,
-    color: "rose",
+    color: "violet",
   },
   {
     title: "videos",
@@ -27,27 +21,9 @@ export const navData = [
     color: "orange",
   },
   {
-    title: "merch",
-    href: "/merch",
-    src: <FaShoppingCart />,
-    color: "yellow",
-  },
-  {
-    title: "parenting",
-    href: "/parents",
-    src: <IoPersonSharp />,
-    color: "teal",
-  },
-  {
     title: "contact",
     href: "/contact",
     src: <MdEmail />,
-    color: "green",
-  },
-  {
-    title: "search",
-    href: "/search",
-    src: <IoSearch />,
-    color: "white",
+    color: "yellow",
   },
 ];
