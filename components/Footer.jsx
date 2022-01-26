@@ -1,6 +1,7 @@
 import React from "react";
 import { socialData } from "../pages/api/socialData";
 import Link from "next/link";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -9,6 +10,7 @@ const Footer = () => {
         <div className="flex justify-center">
           <img src={"/images/ff-banner-white-small.png"} alt={"logo"} />
         </div>
+
         <div className="flex justify-center space-x-8">
           {socialData.map((element, index) => (
             <Link href={element.href} key={index}>
@@ -20,6 +22,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
+
         <p className="text-xs text-slate-300 hover:text-rose-500 ease-in-out duration-200 text-center">
           @2021 Fatherhood Frenzy
           <br />

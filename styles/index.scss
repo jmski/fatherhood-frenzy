@@ -82,6 +82,10 @@ body {
   text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
 }
 
+.web-sticky {
+  position: -webkit-sticky;
+}
+
 .adjacent-post {
   & .arrow-btn {
     transition: width 300ms ease;
@@ -158,6 +162,10 @@ a {
 }
 
 @layer utilities {
+  .web-sticky {
+    position: -webkit-sticky;
+  }
+
   /* underline horizontal */
   .hover-underline-animation {
     display: inline-block;

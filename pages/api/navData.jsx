@@ -18,12 +18,12 @@ export const navData = [
     title: "videos",
     href: "/videos",
     src: <FaVideo />,
-    color: "orange",
+    color: "rose",
   },
   {
-    title: "contact",
-    href: "/contact",
-    src: <MdEmail />,
-    color: "yellow",
+    title: "About",
+    href: "/about",
+    src: <IoPersonSharp />,
+    color: "teal",
   },
 ];
