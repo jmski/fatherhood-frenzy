@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Nav from "../components/NavBar";
 import LandingPage from "../components/section/LandingPage";
-import OverlayMenu from "../components/section/OverlayMenu";
+import NavMenu from "../components/section/NavMenu";
 
 const Preview = () => {
   const [menu, setMenu] = useState(false);
@@ -21,7 +21,7 @@ const Preview = () => {
     <>
       <Nav toggleMenu={toggleMenu} menu={menu} navBg={navBg} />
       <LandingPage toggleMenu={toggleMenu} />
-      <OverlayMenu toggleMenu={toggleMenu} menu={menu} />
+      <NavMenu toggleMenu={toggleMenu} menu={menu} />
     </>
   );
 };

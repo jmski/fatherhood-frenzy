@@ -3,7 +3,7 @@ import { navData } from "../../pages/api/navData";
 import Link from "next/link";
 import { socialData } from "../../pages/api/socialData";
 
-const OverlayMenu = ({ menu }) => {
+const NavMenu = ({ menu }) => {
   return (
     <div
       className={`
@@ -16,7 +16,7 @@ const OverlayMenu = ({ menu }) => {
       `}
     >
       <div className="bg-blue-500 sticky h-screen w-full sm:w-1/2 flex flex-col justify-center pl-8 lg:pl-20">
-        <ul className="text-3xl text-white capitalize space-y-6">
+        <ul className="text-5xl text-white capitalize space-y-8">
           {navData.map((link) => (
             <li
               key={link.title}
@@ -43,4 +43,4 @@ const OverlayMenu = ({ menu }) => {
   );
 };
 
-export default OverlayMenu;
+export default NavMenu;

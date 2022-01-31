@@ -20,14 +20,14 @@ const Nav = ({ toggleMenu, menu, navBg }) => {
         <div className="flex flex-row justify-between items-center space-x-12">
           <ul className="hidden xl:flex flex-row text-white space-x-12">
             {menu && menu
-              ? navData.map((link) => (
+              ? socialData.map((link) => (
                   <li key={link.title} className="cursor-pointer">
                     <Link href={link.href}>
                       <a className="capitalize">{link.title}</a>
                     </Link>
                   </li>
                 ))
-              : socialData.map((link) => (
+              : navData.map((link) => (
                   <li key={link.title} className="cursor-pointer">
                     <Link href={link.href}>
                       <a className="capitalize">{link.title}</a>
@@ -39,7 +39,7 @@ const Nav = ({ toggleMenu, menu, navBg }) => {
             <Link href="/help">
               <a>Need Help?</a>
             </Link>
-            <button>
+            <button className="bg-white bg-opacity-20 rounded-full p-4">
               <Link href="/register">
                 <a>Register</a>
               </Link>
