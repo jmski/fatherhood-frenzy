@@ -1,6 +1,5 @@
 import React from "react";
-import { FaHamburger } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
+import { FaHamburger, FaTimes } from "react-icons/fa";
 import { navData } from "../pages/api/navData";
 import { socialData } from "../pages/api/socialData";
 import Link from "next/link";
@@ -39,7 +38,7 @@ const Nav = ({ toggleMenu, menu, navBg }) => {
             <Link href="/help">
               <a>Need Help?</a>
             </Link>
-            <button className="bg-white bg-opacity-20 rounded-full p-4">
+            <button className="bg-white bg-opacity-20 rounded-full p-4 active:scale-95">
               <Link href="/register">
                 <a>Register</a>
               </Link>
@@ -48,7 +47,7 @@ const Nav = ({ toggleMenu, menu, navBg }) => {
 
           <div
             onClick={toggleMenu}
-            className="border rounded-full p-4 text-xl sm:text-3xl text-white"
+            className="border rounded-full p-4 text-xl sm:text-3xl text-white active:scale-95"
           >
             {menu ? <FaHamburger /> : <FaTimes />}
           </div>

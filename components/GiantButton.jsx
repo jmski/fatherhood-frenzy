@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const GiantButton = () => {
   return (
-    <Link href="/start">
+    <Link href="/">
       <button
         className="
-        h-1/4 min-h-20 bg-yellow-500 hover:bg-white mt-auto
+        h-1/4 min-h-20 bg-yellow-500 mt-auto overflow-hidden active:scale-95
         group flex justify-center items-center ease-in-out duration-500"
       >
         <div
@@ -15,12 +15,18 @@ const GiantButton = () => {
           flex justify-between items-center border-t box-border whitespace-nowrap"
         >
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl
-            font-bold ease-in-out duration-700 group-hover:text-black"
+            className="z-10 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl
+            font-bold ease-in-out duration-500 group-hover:text-black"
           >
             Get started
           </h2>
-          <div className="bg-white text-black group-hover:text-white group-hover:bg-yellow-500 ease-in-out duration-500 rounded-full p-4 group-hover:scale-150 group-hover:-rotate-45">
+          <div
+            className="
+            z-0 text-lg lg:text-2xl bg-white text-black ease-in-out duration-1000 rounded-full p-4
+            group-hover:text-stone-200 group-hover:bg-white group-hover:-rotate-45
+            group-hover:scale-[200]
+          "
+          >
             <BsArrowDownRight />
           </div>
         </div>
