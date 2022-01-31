@@ -16,7 +16,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body className="bg-stone-300 overflow-x-hidden">
+        <body className="bg-stone-100 overflow-x-hidden">
           <Main />
           <NextScript />
         </body>

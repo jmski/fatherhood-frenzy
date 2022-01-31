@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { navData } from "../pages/api/navData";
-import { socialData } from "../pages/api/socialData";
+import { navData } from "../../pages/api/navData";
+import { socialData } from "../../pages/api/socialData";
 
 const NavMenu = ({ menu }) => {
   return (

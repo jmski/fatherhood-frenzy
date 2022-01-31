@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHamburger, FaTimes } from "react-icons/fa";
-import { navData } from "../pages/api/navData";
-import { socialData } from "../pages/api/socialData";
+import { navData } from "../../pages/api/navData";
+import { socialData } from "../../pages/api/socialData";
 import Link from "next/link";
 
 const Nav = ({ toggleMenu, menu, navBg }) => {

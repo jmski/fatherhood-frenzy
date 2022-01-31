@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import Nav from "../components/NavBar";
-import LandingPage from "../components/section/LandingPage";
-import NavMenu from "../components/NavMenu";
+import Nav from "../components/landing-page/NavBar";
+import NavMenu from "../components/landing-page/NavMenu";
+import LandingPage from "../components/landing-page";
 
 const Preview = () => {
   const [menu, setMenu] = useState(false);

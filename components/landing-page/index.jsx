@@ -1,5 +1,5 @@
 import React from "react";
-import GiantButton from "../GiantButton";
+import GiantButton from "./GiantButton";
 
 const LandingPage = () => {
   return (
