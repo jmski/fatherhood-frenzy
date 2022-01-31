@@ -9,7 +9,7 @@ const Email = () => {
   };
 
   return (
-    <div className="bg-fixed bg-email min-h-96 bg-cover bg-center flex flex-col justify-center items-center space-y-6">
+    <div className="rounded-lg bg-fixed bg-email min-h-96 bg-cover bg-center flex flex-col justify-center items-center space-y-6">
       <div>
         <img src={"/images/ff-banner-white-small.png"} />
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { socialData } from "../pages/api/socialData";
+import { socialData } from "../../pages/api/socialData";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 
@@ -23,7 +23,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <p className="text-xs text-slate-300 hover:text-rose-500 ease-in-out duration-200 text-center">
+        <p className="text-xs text-slate-300 hover:text-rose-500 ease-in-out duration-200 text-center cursor-pointer">
           @2021 Fatherhood Frenzy
           <br />
           All rights reserved

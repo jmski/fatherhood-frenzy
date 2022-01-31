@@ -4,6 +4,9 @@ import Link from "next/link";
 const NavLink = ({ color, label, href, src }) => {
   let colorStyles;
   switch (color) {
+    case "black":
+      colorStyles = "text-stone-800 group-hover:text-stone-500";
+      break;
     case "white":
       colorStyles = "text-white group-hover:text-gray-400";
       break;

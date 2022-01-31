@@ -17,9 +17,4 @@ export const socialData = [
     href: "https://facebook.com/fatherhoodfrenzy",
     icon: <FaFacebook size={40} />,
   },
-  {
-    title: "email",
-    href: "mailto:fatherhoodfrenzy@gmail.com",
-    icon: <MdEmail size={40} />,
-  },
 ];

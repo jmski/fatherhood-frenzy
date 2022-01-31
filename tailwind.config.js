@@ -62,6 +62,8 @@ module.exports = {
       maxWidth: {
         "8xl": "100rem",
         60: "15rem",
+        40: "10rem",
+        20: "5rem",
       },
       minWidth: {
         "4xs": "4rem",
@@ -76,6 +78,11 @@ module.exports = {
       },
       minHeight: {
         96: "24rem",
+        60: "15rem",
+        40: "10rem",
+        20: "5rem",
+        "3/4": "75%",
+        "1/2": "50%",
       },
       colors: {
         primary: "var(--primary)",

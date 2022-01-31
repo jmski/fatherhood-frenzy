@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { navData } from "../pages/api/navData";
+import { navData } from "../../pages/api/navData";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ const NavBar = () => {
     ${scrollNav ? "bg-white" : "bg-stone-800"} `}
     >
       <div className="flex flex-row justify-center xl:justify-between items-center gap-8">
-        <div>
+        <div className="max-w-md">
           <Link href="/">
             <a>
               <img
@@ -68,7 +68,7 @@ const NavBar = () => {
           )}
           {menuOpen && (
             <div
-              className={`text-right p-8 absolute right-0 top-20 min-w-2xs gap-4 rounded-md shadow-sm scale-up-center ease-in-out duration-500
+              className={`text-right p-8 absolute right-0 top-20 min-w-2xs space-y-4 rounded-md shadow-sm scale-up-center ease-in-out duration-500
               ${scrollNav ? "bg-white" : "bg-stone-800"}
               `}
             >
