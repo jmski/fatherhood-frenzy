@@ -10,7 +10,7 @@ import {
   CommentsForm,
   Loader,
   AdjacentPosts,
-} from "../../components";
+} from "../../components/blog";
 import { getPosts, getPostDetails } from "../../services";
 
 const PostDetails = ({ post }) => {

@@ -38,12 +38,6 @@ const NavMenu = ({ menu }) => {
             </li>
           ))}
         </ul>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <span>Terms of Service</span>
-          <span>Privacy Policy</span>
-          <span>Subscription Terms</span>
-          <span>Monery-back policy</span>
-        </div>
       </div>
     </div>
   );

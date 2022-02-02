@@ -5,7 +5,7 @@ import {
   Categories,
   PostWidget,
   Footer,
-} from "../components";
+} from "../components/blog";
 
 const Home = () => {
   return (

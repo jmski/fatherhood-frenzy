@@ -20,7 +20,7 @@ const LandingPage = () => {
         </div>
 
         {/* right side */}
-        <div className="sm:w-1/2 h-w-screen sm:h-screen ease-in duration-300">
+        <div className="sm:w-1/2 max-h-fit sm:h-screen ease-in duration-300">
           <video
             className="sm:h-full object-cover object-center"
             loop

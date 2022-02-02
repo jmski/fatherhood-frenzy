@@ -1,5 +1,5 @@
 import React from "react";
-import { socialData } from "../../pages/api/socialData";
+import { socialData } from "../../../pages/api/socialData";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 

@@ -1,94 +1,40 @@
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import NavLink from "./NavLink";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import React from "react";
 import { navData } from "../../pages/api/navData";
+import Link from "next/link";
+import { FaHamburger } from "react-icons/fa";
 
-const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrollNav, setScrollNav] = useState(false);
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const changeNav = () =>
-    window.scrollY >= 70 ? setScrollNav(true) : setScrollNav(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-    return () => window.removeEventListener("scroll", changeNav);
-  });
-
+const Nav = () => {
   return (
-    <div
-      className={`z-50 sticky top-0 px-12 py-8 ease-in-out duration-500
-    ${scrollNav ? "bg-white" : "bg-stone-800"} `}
-    >
-      <div className="flex flex-row justify-center xl:justify-between items-center gap-8">
-        <div className="max-w-md">
-          <Link href="/">
-            <a>
-              <img
-                src={`${
-                  scrollNav
-                    ? "/images/svg/ff-nav-banner-black.svg"
-                    : "/images/svg/ff-nav-banner-white.svg"
-                }`}
-              />
-            </a>
+    <nav className="bg-white sticky top-0 z-50 px-8 md:px-12 lg:px-20 py-5">
+      <div className="flex justify-between items-center">
+        <div className="max-h-20 min-w-3xs max-w-sm">
+          <img src={"/images/svg/ff-nav-banner-black.svg"} />
+        </div>
+        <ul className="hidden xl:flex space-x-12">
+          {navData.map((link) => (
+            <li key={link.title} className="cursor-pointer">
+              <Link href={link.href}>
+                <a className="font-medium text-lg capitalize">{link.title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="flex justify-between items-center space-x-12">
+          <Link href="/help">
+            <a className="hidden sm:flex">Need Help?</a>
           </Link>
-        </div>
-        <div className="hidden md:flex font-mono">
-          <ul className="flex justify-between items-center gap-12 lg:text-md xl:text-xl">
-            {navData.map((element, index) => (
-              <li key={index}>
-                <NavLink
-                  src={element.src}
-                  href={element.href}
-                  color={element.color}
-                  label={element.title}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="md:hidden ml-4 relative ">
-          {menuOpen ? (
-            <RiCloseLine
-              className="scale-up-center"
-              color={`${scrollNav ? "#000" : "#fff"}`}
-              size={35}
-              onClick={toggleMenu}
-            />
-          ) : (
-            <RiMenu3Line
-              className="scale-up-center"
-              color={`${scrollNav ? "#000" : "#fff"}`}
-              size={35}
-              onClick={toggleMenu}
-            />
-          )}
-          {menuOpen && (
-            <div
-              className={`text-right p-8 absolute right-0 top-20 min-w-2xs space-y-4 rounded-md shadow-sm scale-up-center ease-in-out duration-500
-              ${scrollNav ? "bg-white" : "bg-stone-800"}
-              `}
-            >
-              <ul className="flex flex-col items-end gap-12 mb-12 text-xl">
-                {navData.map((element, index) => (
-                  <li key={index}>
-                    <NavLink
-                      href={element.href}
-                      color={element.color}
-                      label={element.title}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          <button className="hidden sm:flex bg-stone-100 hover:bg-stone-200 ease-in duration-200 rounded-full px-6 py-4 active:scale-95">
+            <Link href="/register">
+              <a>Register</a>
+            </Link>
+          </button>
+          <span className="border border-black rounded-full p-4 text-xl sm:text-3xl active:scale-95">
+            <FaHamburger />
+          </span>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Nav;
