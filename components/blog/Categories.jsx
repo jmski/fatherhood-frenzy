@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { getCategories } from "../../services";
-import { IoIosArrowDown } from "react-icons/io";
 
 const Categories = ({ widget = true }) => {
   const [categories, setCategories] = useState([]);
@@ -27,14 +26,13 @@ const Categories = ({ widget = true }) => {
         </div>
       ) : (
         // category bar
-        <div className="bg-white my-12 h-full p-20">
+        <div className="bg-white my-12 h-full p-12">
           <h3 className="font-bold text-6xl mb-8">Categories</h3>
           <ul className="flex border-t border-b capitalize">
             {categories.map((category) => (
               <Link key={category.slug} href={`/category/${category.slug}`}>
                 <li className="bg-white flex items-center gap-3 p-8 ease-in-out duration-200 hover:bg-stone-100">
                   {category.name}
-                  <IoIosArrowDown />
                 </li>
               </Link>
             ))}

@@ -18,7 +18,7 @@ const PostCard = ({ post }) => {
       >
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
       </h1>
-      <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
+      <div className="block lg:flex text-center items-center justify-center mb-8 w-full mt-auto">
         <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
           <img
             alt={post.author.name}
@@ -45,8 +45,8 @@ const PostCard = ({ post }) => {
               strokeWidth="2"
               d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
-            <span>{moment(post.createdAt).format("MMM DD, YYYY")}</span>
           </svg>
+          <span>{moment(post.createdAt).format("MMM DD, YYYY")}</span>
         </div>
       </div>
       <p className="text-center text-lg text-grau-700 font-normal px-4 lg:px-20 mb-8">

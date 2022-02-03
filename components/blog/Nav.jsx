@@ -5,7 +5,7 @@ import { FaHamburger } from "react-icons/fa";
 
 const Nav = () => {
   return (
-    <nav className="bg-white sticky top-0 z-50 px-8 md:px-12 lg:px-20 py-5">
+    <nav className="bg-white sticky top-0 z-50 px-8 md:px-12 lg:px-20 py-5 shadow-lg">
       <div className="flex justify-between items-center">
         <div className="max-h-20 min-w-3xs max-w-sm">
           <Link href="/blog">

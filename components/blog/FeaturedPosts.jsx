@@ -74,7 +74,8 @@ const FeaturedPosts = () => {
   );
 
   return (
-    <div className="my-8 px-8">
+    <div className="my-8 px-12">
+      <h3 className="text-4xl font-bold mb-8">Featured Posts</h3>
       <Carousel
         infinite
         customLeftArrow={customLeftArrow}

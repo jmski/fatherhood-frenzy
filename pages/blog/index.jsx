@@ -11,7 +11,7 @@ const Blog = ({ posts }) => {
       <Nav />
       <Categories widget={false} />
       <FeaturedPosts />
-      <div className="px-12">
+      <div className="px-12 py-8 grid lg:grid-cols-3 gap-4">
         {posts.map((post) => (
           <PostCard post={post.node} key={post.title} />
         ))}
