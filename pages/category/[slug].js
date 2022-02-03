@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 
 import { getCategories, getCategoryPost } from "../../services";
 import { PostCard, Categories, Loader } from "../../components/blog";
+import Nav from "../../components/blog/Nav";
+import Footer from "../../components/Footer";
 
 const CategoryPost = ({ posts }) => {
   const router = useRouter();
@@ -13,6 +15,7 @@ const CategoryPost = ({ posts }) => {
 
   return (
     <>
+      <Nav />
       <div className="container mx-auto px-10 my-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">
@@ -27,6 +30,7 @@ const CategoryPost = ({ posts }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
