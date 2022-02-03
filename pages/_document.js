@@ -11,7 +11,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <title>Fatherhood Frenzy</title>
-        <meta name="description" content="Fatherhood Frenzy - slogan here" />
+        <meta
+          name="description"
+          content="Fatherhood Frenzy - Finding your ikigai"
+        />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <Head>
           <link rel="icon" href="/favicon.ico" />

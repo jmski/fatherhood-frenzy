@@ -39,8 +39,8 @@ const Nav = ({ toggleMenu, menu, navBg }) => {
               <a>Need Help?</a>
             </Link>
             <button className="bg-white bg-opacity-20 rounded-full p-4 active:scale-95">
-              <Link href="/register">
-                <a>Register</a>
+              <Link href="/start">
+                <a>Start</a>
               </Link>
             </button>
           </div>

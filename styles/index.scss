@@ -6,77 +6,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 
-#gradient-canvas {
-  position: absolute;
-  // width: 100%;
-  // height: 100%;
-
-  --gradient-color-1: #eab308;
-  --gradient-color-2: #f97316;
-  --gradient-color-3: #a78bfa;
-  --gradient-color-4: #f43f5e;
-
-  z-index: 0;
-
-  // mask-image: -webkit-gradient(
-  //   linear,
-  //   right top,
-  //   right bottom,
-  //   color-stop(0, rgba(0, 0, 0, 1)),
-  //   color-stop(0.35, rgba(0, 0, 0, 1)),
-  //   color-stop(0.85, rgba(0, 0, 0, 0)),
-  //   color-stop(1, rgba(0, 0, 0, 0))
-  // );
-
-  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 40% 100%);
-  // clip-path: polygon(0 0, 100% 0, 100% 80%, 40% 100%);
-}
-
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  &:before {
-    content: "";
-    content: "";
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
-  }
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: rgba(73, 86, 112, 1) rgba(15, 23, 42, 1);
 }
 
-#root {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  --bg-color: black;
-  --font-color: lightslategray;
-  --hl-color: orange;
-  --fg-color: #292f34;
-  color: var(--font-color);
-  background-color: var(--bg-color);
+::-webkit-scrollbar {
+  width: 12px;
 }
-
-// ::-webkit-scrollbar {
-//   width: 12px;
-// }
-// ::-webkit-scrollbar-track {
-//   background: rgba(15, 23, 42, 1);
-// }
-// ::-webkit-scrollbar-thumb {
-//   background-color: rgba(73, 86, 112, 1);
-//   border: 3px solid rgba(15, 23, 42, 1);
-//   border-radius: 10px;
-// }
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(73, 86, 112, 1);
+  border: 3px solid rgba(15, 23, 42, 1);
+  border-radius: 10px;
+}
 
 .text-shadow {
   text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
@@ -158,76 +105,5 @@ a {
     font-style: normal;
     font-weight: 700;
     src: url("/fonts/Lexend/Lexend-Bold.ttf");
-  }
-}
-
-@layer utilities {
-  .web-sticky {
-    position: -webkit-sticky;
-  }
-
-  /* underline horizontal */
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-
-  .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-  /* underline vertical */
-  .bg-growing-underline {
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    @apply bg-no-repeat transition-all duration-200;
-  }
-  .bg-growing-underline:hover {
-    background-size: 100% 100%;
-  }
-  .bg-growing-underline:focus {
-    background-size: 100% 100%;
-  }
-
-  .scale-up-center {
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
-      both;
-    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  }
-
-  @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-      transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-      transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
   }
 }

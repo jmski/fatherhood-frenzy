@@ -12,18 +12,15 @@ export const navData = [
     title: "blog",
     href: "/blog",
     src: <FaBookReader />,
-    color: "violet",
   },
   {
     title: "videos",
-    href: "/videos",
+    href: "/blog",
     src: <FaVideo />,
-    color: "rose",
   },
   {
     title: "About",
-    href: "/about",
+    href: "/blog",
     src: <IoPersonSharp />,
-    color: "teal",
   },
 ];
