@@ -1,7 +1,12 @@
 import React from "react";
+import Nav from "../../components/blog/Nav";
 
 const Help = () => {
-  return <div>I help you okay good day sir</div>;
+  return (
+    <>
+      <Nav />I help you okay good day sir
+    </>
+  );
 };
 
 export default Help;

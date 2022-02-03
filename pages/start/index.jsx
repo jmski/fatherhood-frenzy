@@ -1,7 +1,13 @@
 import React from "react";
+import Nav from "../../components/blog/Nav";
 
 const Start = () => {
-  return <div>What is Ikigai?</div>;
+  return (
+    <>
+      <Nav />
+      What is Ikigai?
+    </>
+  );
 };
 
 export default Start;
