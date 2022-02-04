@@ -257,3 +257,57 @@ export const getRecentPosts = async () => {
 
   return result.posts;
 };
+
+export const getTags = async () => {
+  const query = gql`
+    query GetTags {
+      tags {
+        name
+        slug
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.tags;
+};
+
+export const getTagPost = async (slug) => {
+  const query = gql`
+    query getTagPost {
+      tagsConnection {
+        edges {
+          cursor
+          node {
+            posts {
+              author {
+                name
+                bio
+                id
+                photo {
+                  url
+                }
+              }
+              createdAt
+              slug
+              title
+              excerpt
+              featuredImage {
+                url
+              }
+              tag {
+                id
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query, { slug });
+
+  return result.tagsConnection.edges;
+};
